@@ -1,0 +1,154 @@
+  <!doctype html>
+    <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+          xmlns="http://www.w3.org/1999/html">
+        <head>
+                        {% load static %}
+
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>ZSquare WaterTech</title>
+            <link rel="shortcut icon" href="{% static '/assets/images/fav.png' %}" type="image/x-icon">
+
+            <link rel="shortcut icon" href="{% static '/assets/images/fav.jpg' %}">
+            <link rel="stylesheet" href="{% static '/assets/css/bootstrap.min.css' %}">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+            <link rel="stylesheet" href="{% static '/assets/plugins/testimonial/css/owl.carousel.min.css' %}">
+            <link rel="stylesheet" href="{% static '/assets/plugins/testimonial/css/owl.theme.min.css' %}">
+            <link rel="stylesheet" type="text/css" href="{% static '/assets/css/style.css' %}" />
+            <link rel="stylesheet" href="{% static '/assets/css/animate.min.css' %}">
+            <link rel="stylesheet" href="{% static '/assets/plugins/testimonial/css/owl.theme.default.min.css' %}">
+        </head>
+          <body class="bg-white">
+         <header>
+    <div id="menu-jk" class="nav-part shadow-md bg-white navcol">
+        <div class="container-lg">
+            <div class="row p-2">
+                <div class="col-6 col-lg-3 p-2">
+                    <a href="index.html">
+                        <img class="max-230" src="{% static '/assets/images/zs.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-lg-9 d-flex justify-content-end align-items-center">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white w-110">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="menu">
+                           <ul class="navbar-nav ms-auto fw-bold nacul fs-7">
+    <li class="nav-item p-3 px-4">
+        <a href="/" class="nav-link" style="color: #3D4993;">Home</a>
+    </li>
+    <li class="nav-item p-3 px-4">
+        <a href="/about/" class="nav-link" style="color: #3D4993;">About Us</a>
+    </li>
+    <li class="nav-item p-3 px-4">
+        <a href="/products/" class="nav-link" style="color: #3D4993;">Products</a>
+    </li>
+    <li class="nav-item p-3 px-4">
+        <a href="/services/" class="nav-link" style="color: #3D4993;">Services</a>
+    </li>
+    <li class="nav-item p-3 px-4">
+        <a href="/contact/" class="nav-link" style="color: #3D4993;">Contact Us</a>
+    </li>
+</ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><br><br><br><br><br><br><br>
+
+<section class="inquery" style="background-color: #2290d1; padding: 2em 1em; text-align: center; color: white;">
+    <h1 style="margin-bottom: 1em;">Ask About The Product</h1>
+    <form method="POST" style="display: flex; justify-content: center; gap: 1em; flex-wrap: wrap;">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 0.5em; border: none; border-radius: 5px; font-size: 1em; margin-bottom: 1em;">
+        <input type="tel" name="mobile" placeholder="Mobile No" required style="padding: 0.5em; border: none; border-radius: 5px; font-size: 1em; margin-bottom: 1em;">
+        <select name="Product" required style="padding: 0.5em; border: none; border-radius: 5px; font-size: 1em; margin-bottom: 1em;">
+            <option value="" disabled selected>Select Product</option>
+            <option value="domestic">Domestic RO</option>
+            <option value="commercial">Commercial RO</option>
+            <option value="commercial1">Commercial RO Plant Capacity 100 LPH</option>
+            <option value="commercial2">Commercial RO Plant Capacity 200 LPH</option>
+            <option value="commercial3">Commercial RO Plant Capacity 250 LPH</option>
+            <option value="industrial">Industrial RO</option>
+            <option value="industrial1">Industrial RO Plant Capacity upto 500 LPH</option>
+            <option value="industrial2">Industrial RO Plant Capacity upto 1000 LPH</option>
+            <option value="industrial3">Industrial RO Plant Capacity upto 6000 LPH</option>
+            <option value="watersoft">Water Softner</option>
+            <option value="waterconditioner">Water Conditioner</option>
+            <option value="pressure">Pressure Pump</option>
+            <option value="pool">Swimming Pool Filtration Equipments</option>
+            <option value="sewage">Sewage Treatment</option>
+            <option value="rainwater">Rain Water Harvesting</option>
+            <option value="heatpump">Heat Pump</option>
+        </select>
+        <button type="submit" style="background: #3D4993; color: white; padding: 0.5em 1em; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">SUBMIT</button>
+    </form>
+</section><br><br>
+
+         <footer>
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 foot-about">
+                           <h4>About US</h4>
+
+                            <p>At Z Square Water Tech, we<br> take pride in being an authorized<br>  dealer of top-tier brands like<br> Lexipure, Usha, Ruby, Willo,<br> and Fluid Dynamics. Our<br> partnership with these industry <br>leaders ensures that we provide <br>our customers with the highest<br> quality water purification and <br>treatment solutions.</p>
+
+                        </div>
+
+                        <div class="col-md-3 foot-post">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="">Water Purifiers</a></li>
+                                <li><a href="">Water Softeners</a></li>
+                                <li><a href="">Domestic RO</a></li>
+                                <li><a href="">Commercial RO</a></li>
+                                <li><a href="">ETP&STP</a></li>
+                                <li><a href="">Industrial RO</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 foot-services">
+                            <h4>Our Products</h4>
+
+                            <ul>
+                                <li><a href="">Water Purifiers</a></li>
+                                <li><a href="">Water Softeners</a></li>
+                                <li><a href="">Domestic RO</a></li>
+                                <li><a href="">Commercial RO</a></li>
+                                <li><a href="">ETP&STP</a></li>
+                                <li><a href="">Industrial RO</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 foot-news">
+                            <h4>Connect with us</h4>
+
+
+
+
+                           <ul>
+                                <a href="https://www.facebook.com/share/r/KyrV6UGBK4quzzvX/?mibextid=oFDknk"> <li><i class="bi bi-facebook"></i></li></a>
+                                <a href="https://www.instagram.com/zsquare_watertech/?igsh=MW4zMGVrdTRudWF2Mg%3D%3D>" ><li><i class="bi bi-instagram"></i></li></a>
+                                <li><i class="bi bi-linkedin"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        </body>
+        <script src="{% static '/assets/js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static '/assets/js/popper.min.js' %}"></script>
+        <script src="{% static '/assets/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static '/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+        <script src="{% static '/assets/plugins/testimonial/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static '/assets/js/script.js' %}"></script>
+
+    </html>

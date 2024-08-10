@@ -52,3 +52,17 @@ $(this).removeClass("active");
 $(this).addClass("active");
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggler = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('#menu');
+
+    menu.addEventListener('show.bs.collapse', function () {
+        toggler.style.display = 'none'; // Hide the button when menu is shown
+    });
+
+    menu.addEventListener('hidden.bs.collapse', function () {
+        toggler.style.display = 'block'; // Show the button when menu is hidden
+    });
+});

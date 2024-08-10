@@ -187,10 +187,10 @@ body {
 
 .page-nav {
   background-size: 100%;
-  padding: 68px;
+  padding: 0px;
   text-align: center;
   padding-top: 190px;
-  background-color: #eaeaea;
+  background-color: black;
 }
 
 .page-nav ul {
@@ -202,7 +202,7 @@ body {
     background-size: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 567px) {
   .page-nav {
     padding-top: 200px;
     padding-bottom: 40px;
@@ -801,6 +801,27 @@ div.gallery {
     font-size: 1em;
     cursor: pointer;
 }
+
+
+/* General toggle button style */
+.navbar-toggler {
+    margin-left: auto;
+    display: inline-block;
+}
+
+/* Hide the toggle button when the menu is expanded */
+.navbar-collapse.show + .navbar-toggler {
+    display: none;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-right: 15px;
+        margin-left: 0;
+    }
+}
+
 
 
 
